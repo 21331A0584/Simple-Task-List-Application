@@ -19,6 +19,7 @@ public class TaskListApp{
             System.out.println("5. Exit");
             System.out.println("Enter Your Choice: ");
 
+            try{
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -39,6 +40,10 @@ public class TaskListApp{
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;  
+            }
+            }catch(InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a number.");
+                sc.nextLine();
             }
         }
     }
