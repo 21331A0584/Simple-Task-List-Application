@@ -64,7 +64,7 @@ public class TaskListApp{
         System.out.println();
         System.out.println("Do you want to continue (Y/N):");
         char ch= sc.next().charAt(0);
-        if(ch=='Y'){
+        if(ch=='Y' || ch=='y'){
             return true;
         }
         else{
@@ -91,7 +91,7 @@ public class TaskListApp{
             System.out.println();
             System.out.println("Do you want to continue (Y/N):");
             char ch= sc.next().charAt(0);
-            if(ch=='Y'){
+            if(ch=='Y' || ch=='y'){
                 return true;
             }
             else{
@@ -131,7 +131,7 @@ public class TaskListApp{
                 System.out.println();
                 System.out.println("Do you want to continue (Y/N):");
                 char ch= in.next().charAt(0);
-                if(ch=='Y'){
+                if(ch=='Y' || ch=='y'){
                     return true;
                 }
                 else{
