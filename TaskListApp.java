@@ -48,7 +48,7 @@ public class TaskListApp{
     private static void menu(){
             System.out.println("--- USER MENU ---");
             System.out.println("1. ADD Task");
-            System.out.println("2. REMOVE/Complete Task");
+            System.out.println("2. REMOVE Task");
             System.out.println("3. VIEW Task");
             System.out.println("4. EDIT Task");
             System.out.println("5. EXIT");
@@ -82,14 +82,14 @@ public class TaskListApp{
         if(TaskList.isEmpty()){
             return true;
         }else{
-        System.out.print("Enter Task Number To Complete/Remove: ");
+        System.out.print("Enter Task Number To Remove: ");
         try {
             taskNum = sc.nextInt();
             if (taskNum <= 0 || taskNum > TaskList.size()) {
                 throw new IndexOutOfBoundsException();
             }
             TaskList.remove(taskNum - 1);
-            System.out.println("Task Completed/ Removed Successfully");
+            System.out.println("Task Removed Successfully");
             System.out.println();
             System.out.println("Do you want to continue (Y/N):");
             char ch= sc.next().charAt(0);
