@@ -13,7 +13,6 @@ public class TaskListApp{
         System.out.println("Welcome to Task List Application !!");
         System.out.println();
         while(true){
-            
             menu();
             try{
             choice = sc.nextInt();
@@ -45,6 +44,7 @@ public class TaskListApp{
         }
     }
 
+    //Menu
     private static void menu(){
             System.out.println("--- USER MENU ---");
             System.out.println("1. ADD Task");
@@ -56,6 +56,7 @@ public class TaskListApp{
             System.out.print("Enter Your Choice: ");
     }
 
+    //Task Adding method
     private static boolean addTask() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Task Name to Add: ");
@@ -73,6 +74,7 @@ public class TaskListApp{
         }
     }
 
+    //Task removal method
     private static boolean completeTask() {
         Scanner sc = new Scanner(System.in);
         int taskNum;
@@ -109,6 +111,7 @@ public class TaskListApp{
     }
     }
 
+    //Task Edit Method
     private static boolean editTask() {
         Scanner in = new Scanner(System.in);
         int taskNum;
@@ -149,6 +152,7 @@ public class TaskListApp{
         }
     }
 
+    //Task Viewing method
     private static void viewTasks() {
         Scanner sc = new Scanner(System.in);
         if (TaskList.isEmpty()) {
